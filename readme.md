@@ -64,10 +64,10 @@
 ---
 
 ## aparcando cambio (stash)
+|Listando todos los cambios aparcado| `$ git stash list`|
 | casos de uso | comando |
 |--------|--------|
 |Aparcando todos los cambios| `$ git stash <save>`|
-|Listando todos los cambios aparcado| `$ git stash list`|
 |Aplicando los ultimos cambios aparcados| `$ git stash apply`|
 |Borrando los cambios aparcados| `$ git stash drop stash@{0}`|
 |Aplicar ultimos cambios aparcados y borrarlos de la lista| `$ git stash pop`|
@@ -79,3 +79,10 @@
 ---
 
 ## Descartando cambios (clean)
+| casos de uso | comando |
+|--------|--------|
+|Eliminar archivos sin seguimiento que no esten ignorados| `$ git clean`|
+|Eliminar archivos sin seguimiento aunque esten ignorados| `$ git clean -x`|
+|Eliminar archivos y directorios sin seguimiento| `$ git clean -d -f`|
+|Ver que archivos y directorios se borrarán| `$ git clean -d -n`|
+|Eliminar archivos de forma interactiva| `$ git clean -i`|
