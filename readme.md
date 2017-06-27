@@ -53,16 +53,6 @@
 
 ---
 
-## Confirmando cambios (commit)
-
-| casos de uso | comando |
-|--------|--------|
-|Realizar commit añadiendo el texto descriptivo mediante el editor por defecto | `$ git commit` |
-|Realizar commit añadiendo el texto descriptivo directamente | `$ git commit -m "descripcion del commit"` |
-|Realizar commit añadiendo al staging todos los ficheros modificados| `$ git commit -a -m "descripcion del commit"` |
-
----
-
 ## Eliminando archivos (rm)
 
 | casos de uso | comando |
@@ -81,6 +71,16 @@
 
 ---
 
+## Confirmando cambios (commit)
+
+| casos de uso | comando |
+|--------|--------|
+|Realizar commit añadiendo el texto descriptivo mediante el editor por defecto | `$ git commit` |
+|Realizar commit añadiendo el texto descriptivo directamente | `$ git commit -m "descripcion del commit"` |
+|Realizar commit añadiendo al staging todos los ficheros modificados| `$ git commit -a -m "descripcion del commit"` |
+
+---
+
 ## Ignorando archivos (.gitignore)
 
 | casos de uso | comando |
@@ -90,6 +90,21 @@
 |ignorar directorios | `directorio/` |
 |ignorar ficheros en un directorio | `ruta/*.txt` |
 |ignorar ficheros en un directorio recursivamente| `ruta/**/*.txt` |
+
+---
+
+## Historial de cambios (log)
+
+| casos de uso | comando |
+|--------|--------|
+|Mostrar los ultimos commits | `$ git log` |
+|Mostrar los 'n' ultimos commits | `$ git log -n` |
+|Mostrar los ultimos commits mostrando diferencias introducidas| `$ git log -p` |
+|Mostrar los ultimos commits mostrando estadisticas | `$ git log --stat` |
+|Mostrar los ultimos commits aplicando formato de una linea | `$ git log --pretty=oneline` |
+|Mostrar los ultimos commits aplicando formato expecífico | `$ git log --pretty=format:"%s"` |
+|Mostrar los ultimos commits mostrando un grafico de ramificacion | `$ git log --graph` |
+
 ---
 
 ## Comprobando cambios (diff)
