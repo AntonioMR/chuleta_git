@@ -53,6 +53,16 @@
 
 ---
 
+## Confirmando cambios (commit)
+
+| casos de uso | comando |
+|--------|--------|
+|Realizar commit añadiendo el texto descriptivo mediante el editor por defecto | `$ git commit` |
+|Realizar commit añadiendo el texto descriptivo directamente | `$ git commit -m "descripcion del commit"` |
+|Realizar commit añadiendo al staging todos los ficheros modificados| `$ git commit -a -m "descripcion del commit"` |
+
+---
+
 ## Ignorando archivos (.gitignore)
 
 | casos de uso | comando |
