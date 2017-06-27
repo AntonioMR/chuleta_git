@@ -73,6 +73,14 @@
 
 ---
 
+## Renombrando archivos (mv)
+
+| casos de uso | comando |
+|--------|--------|
+|Cambiar el nombre de un fichero en seguimiento | `$ git mv [nombre] [nuevoNombre]` |
+
+---
+
 ## Ignorando archivos (.gitignore)
 
 | casos de uso | comando |
