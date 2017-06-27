@@ -63,6 +63,16 @@
 
 ---
 
+## Eliminando archivos (rm)
+
+| casos de uso | comando |
+|--------|--------|
+|Eliminar un fichero del disco eliminandolo del seguimiento | `$ git rm [fichero]` |
+|Eliminar un fichero del disco eliminandolo del seguimiento si está en el staging | `$ git rm -f [archivo]`|
+|Eliminar del seguimiento sin eliminar del disco | `$ git rm --cached [archivo]`|
+
+---
+
 ## Ignorando archivos (.gitignore)
 
 | casos de uso | comando |
