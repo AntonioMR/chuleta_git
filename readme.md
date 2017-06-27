@@ -31,14 +31,14 @@
 |Clonar repositorio desde url| `$ git clone [url]`|
 |Clonar repositorio desde url en directorio| `$ git clone [url] <dir>` |
 
-
 ---
 
 ## Revisando el estado del repoitorio (status)
 | casos de uso | comando |
 |--------|--------|
 |Ver estado de ficheros | `$ git status` |
-|Ver estado de ficheros en formato reducido| `$ git status -s` |
+|Ver estado de ficheros en formato abreviado| `$ git status -s` |
+
 ---
 
 ## Añadiendo archivos al staging (add)
@@ -51,6 +51,17 @@
 |Añadir interactivo | `$ git add -i`|
 |Añadir parte del archivo | `$ git add -p [archivo]`|
 
+---
+
+## Ignorando archivos (.gitignore)
+
+| casos de uso | comando |
+|--------|--------|
+|ignorar ficheros con extension bak | `*.bak` |
+|añadir excepcion a regla previa | `!lib.bak` |
+|ignorar directorios | `directorio/` |
+|ignorar ficheros en un directorio | `ruta/*.txt` |
+|ignorar ficheros en un directorio recursivamente| `ruta/**/*.txt` |
 ---
 
 ## Comprobando cambios (diff)
