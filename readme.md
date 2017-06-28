@@ -47,7 +47,10 @@
 |--------|--------|
 |Añadir fichero | `$ git add [fichero]` |
 |Añadir directorio | `$ git add [directorio/]`|
-|Añadir todos los ficheros modificados | `$ git add .` |
+|Añadir todos los ficheros nuevos o modificados | `$ git add .` |
+|Añadir los ficheros nuevos, modificados o eliminados | `$ git add -A` |
+|Añadir los ficheros que ya estan en seguimiento | `$ git add -u` |
+|Muestra lo que se añadiría | `$ git add -n` |
 |Añadir interactivo | `$ git add -i`|
 |Añadir parte del archivo | `$ git add -p [archivo]`|
 
