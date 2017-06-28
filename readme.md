@@ -77,7 +77,17 @@
 |--------|--------|
 |Realizar commit añadiendo el texto descriptivo mediante el editor por defecto | `$ git commit` |
 |Realizar commit añadiendo el texto descriptivo directamente | `$ git commit -m "descripcion del commit"` |
-|Realizar commit añadiendo al staging todos los ficheros modificados| `$ git commit -a -m "descripcion del commit"` |
+|Realizar commit añadiendo al area de confirmación todos los ficheros modificados| `$ git commit -a -m "descripcion del commit"` |
+|Cambiar el mensaje o añadir cambios al ultimo commit| `$ git commit --amend` |
+
+---
+
+## Deshaciendo cambios (reset, checkout)
+
+| casos de uso | comando |
+|--------|--------|
+|Sacar cambios del area de confirmacion | `git reset HEAD <archivo>` |
+|Descartar cambios no confirmados realizados en un archivo (se perderan) | `git checkout -- <archivo>` |
 
 ---
 
