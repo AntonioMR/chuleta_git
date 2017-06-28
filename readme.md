@@ -33,7 +33,7 @@
 
 ---
 
-## Revisando el estado del repoitorio (status)
+## Revisando el estado del repositorio (status)
 | casos de uso | comando |
 |--------|--------|
 |Ver estado de ficheros | `$ git status` |
@@ -41,7 +41,7 @@
 
 ---
 
-## Añadiendo archivos al staging (add)
+## Añadiendo archivos al area de confirmación (add)
 
 | casos de uso | comando |
 |--------|--------|
@@ -58,7 +58,7 @@
 | casos de uso | comando |
 |--------|--------|
 |Eliminar un fichero del disco eliminandolo del seguimiento | `$ git rm [fichero]` |
-|Eliminar un fichero del disco eliminandolo del seguimiento si está en el staging | `$ git rm -f [archivo]`|
+|Eliminar un fichero del disco eliminandolo del seguimiento si está en el area de confirmación | `$ git rm -f [archivo]`|
 |Eliminar del seguimiento sin eliminar del disco | `$ git rm --cached [archivo]`|
 
 ---
@@ -113,7 +113,7 @@
 |--------|--------|
 |Ver todas las diferencias | `$ git diff` |
 |Ver diferencias en fichero | `$ git diff [fichero]` |
-|Ver diferencias en staging | `$ git diff --cached` |
+|Ver diferencias en el area de confirmación | `$ git diff --cached` |
 
 ---
 
@@ -126,7 +126,7 @@
 |Borrando los cambios aparcados| `$ git stash drop stash@{0}`|
 |Aplicar ultimos cambios aparcados y borrarlos de la lista| `$ git stash pop`|
 |Aplicar ultimos cambios aparcados y borrarlos de la lista| `$ git stash pop`|
-|Aparcar solo los cambio no añadidos al staging| `$ git stash --keep-index`|
+|Aparcar solo los cambio no añadidos al area de confirmación| `$ git stash --keep-index`|
 |Decidir que cambios del fichero añadir al aparcamiento| `$ git stash --patch`|
 |Mover los cambios a una nueva rama| `$ git stash branch [rama]`|
 
