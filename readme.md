@@ -149,3 +149,15 @@
 |Eliminar archivos y directorios sin seguimiento| `$ git clean -d -f`|
 |Ver que archivos y directorios se borrarán| `$ git clean -d -n`|
 |Eliminar archivos de forma interactiva| `$ git clean -i`|
+
+
+---
+
+## Repositorios remotos (remote)
+| casos de uso | comando |
+|--------|--------|
+|Ver los repositorios remotos configurados (solo nombre)| `$ git remote`|
+|Ver los repositorios remotos configurados (nombre y url)| `$ git remote -v`|
+|Añadir repositorio remoto| `$ git remote add [nombre-remoto] [url-remoto]`|
+
+---
