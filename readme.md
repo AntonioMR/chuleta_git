@@ -161,3 +161,9 @@
 |Añadir repositorio remoto| `$ git remote add [nombre-remoto] [url-remoto]`|
 
 ---
+
+## Trayendo cambios de repositorios remotos (fetch)
+| casos de uso | comando |
+|--------|--------|
+|Traer informacion de cambios del remoto "origin"| `$ git fetch`|
+|Traer informacion de cambios del un repositorio remoto concreto| `$ git fetch [nombre-remoto]`|
