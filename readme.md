@@ -135,7 +135,6 @@
 |Aplicando los ultimos cambios aparcados| `$ git stash apply`|
 |Borrando los cambios aparcados| `$ git stash drop stash@{0}`|
 |Aplicar ultimos cambios aparcados y borrarlos de la lista| `$ git stash pop`|
-|Aplicar ultimos cambios aparcados y borrarlos de la lista| `$ git stash pop`|
 |Aparcar solo los cambio no añadidos al area de confirmación| `$ git stash --keep-index`|
 |Decidir que cambios del fichero añadir al aparcamiento| `$ git stash --patch`|
 |Mover los cambios a una nueva rama| `$ git stash branch [rama]`|
