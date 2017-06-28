@@ -173,3 +173,14 @@
 |--------|--------|
 |Traer informacion de cambios del remoto "origin"| `$ git fetch`|
 |Traer informacion de cambios del un repositorio remoto concreto| `$ git fetch [nombre-remoto]`|
+
+---
+
+## Llevando cambios de repositorios remotos (push)
+| casos de uso | comando |
+|--------|--------|
+|Llevar cambios registrados al remoto "origin"| `$ git push`|
+|Llevar cambios registrados a remoto concreto | `$ git push [nombre-remoto]`|
+|Llevar cambios de una rama al remoto "origin" | `$ git push origin [rama]`|
+|Llevar una etiqueta al remoto "origin" | `$ git push origin [tag]`|
+|Llevar todas las etiquetas al remoto "origin" | `$ git push origin --tags`|
