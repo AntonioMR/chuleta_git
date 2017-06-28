@@ -162,6 +162,9 @@
 |Ver los repositorios remotos configurados (solo nombre)| `$ git remote`|
 |Ver los repositorios remotos configurados (nombre y url)| `$ git remote -v`|
 |Añadir repositorio remoto| `$ git remote add [nombre-remoto] [url-remoto]`|
+|Inspeccionar repositorio remoto| `$ git remote show [nombre-remoto]`|
+|Renombrar repositorio remoto| `$ git remote rename [nombre-remoto] [nuevo_nombre-remoto]`|
+|Eliminar repositorio remoto| `$ git remote rm [nombre-remoto]`|
 
 ---
 
