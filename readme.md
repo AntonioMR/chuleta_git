@@ -184,3 +184,14 @@
 |Llevar cambios de una rama al remoto "origin" | `$ git push origin [rama]`|
 |Llevar una etiqueta al remoto "origin" | `$ git push origin [tag]`|
 |Llevar todas las etiquetas al remoto "origin" | `$ git push origin --tags`|
+
+---
+
+## Etiquetando commits (tag)
+| casos de uso | comando |
+|--------|--------|
+|Listar etiquetas disponibles| `$ git tag`|
+|Listar etiquetas que cumplen con un criterio| `$ git tag -l 'V1.*'`|
+|Crear etiqueta anotada| `$ git tag -a [tag_name] <-m 'comentario de etiqueta'>`|
+|Crear etiqueta anotada en un commit anterior| `$ git tag -a [tag_name] [commit_checksum]`|
+|Crear etiqueta ligera| `$ git tag [tag_name]`|
