@@ -117,6 +117,7 @@
 |Mostrar los ultimos commits aplicando formato de una linea | `$ git log --pretty=oneline` |
 |Mostrar los ultimos commits aplicando formato expecífico | `$ git log --pretty=format:"%s"` |
 |Mostrar los ultimos commits mostrando un grafico de ramificacion | `$ git log --graph` |
+|Mostrar los ultimos commits mostrando donde apuntan las ramas creadas | `$ git log --decorate` |
 
 ---
 
@@ -195,3 +196,13 @@
 |Crear etiqueta anotada| `$ git tag -a [tag_name] <-m 'comentario de etiqueta'>`|
 |Crear etiqueta anotada en un commit anterior| `$ git tag -a [tag_name] [commit_checksum]`|
 |Crear etiqueta ligera| `$ git tag [tag_name]`|
+
+---
+
+## Utilizando ramas (branch)
+| casos de uso | comando |
+|--------|--------|
+|Listar ramas disponibles| `$ git branch`|
+|Crear ramas | `$ git branch [rama]`|
+|Borrar ramas sin cambios pendientes de fusionar| `$ git branch -d [rama]`|
+|Borrar ramas con cambios pendientes de fusionar| `$ git branch -D [rama]`|
