@@ -217,3 +217,11 @@
 |--------|--------|
 |Cambiar de rama activa| `$ git checkout [rama]`|
 |Cambiar de rama activa creando la nueva rama| `$ git checkout -b [rama]`|
+
+---
+
+## Fusionando ramas entre ramas (merge)
+| casos de uso | comando |
+|--------|--------|
+|Fusionar rama en la rama activa| `$ git merge [rama]`|
+|Fusionar rama en la rama activa sin dejar commit de la fusión| `$ git merge [rama] --no-commit`|
