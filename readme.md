@@ -206,3 +206,11 @@
 |Crear ramas | `$ git branch [rama]`|
 |Borrar ramas sin cambios pendientes de fusionar| `$ git branch -d [rama]`|
 |Borrar ramas con cambios pendientes de fusionar| `$ git branch -D [rama]`|
+
+---
+
+## Moviendose entre ramas (checkout)
+| casos de uso | comando |
+|--------|--------|
+|Cambiar de rama activa| `$ git checkout [rama]`|
+|Cambiar de rama activa creando la nueva rama| `$ git checkout -b [rama]`|
