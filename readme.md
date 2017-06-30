@@ -203,6 +203,9 @@
 | casos de uso | comando |
 |--------|--------|
 |Listar ramas disponibles| `$ git branch`|
+|Listar ramas viendo ultimos cambios confirmados en cada rama| `$ git branch -v`|
+|Listar ramas fusionadas en la rama activa| `$ git branch --merged`|
+|Listar ramas con trabajos sin fusionar en la rama activa| `$ git branch --no-merged`|
 |Crear ramas | `$ git branch [rama]`|
 |Borrar ramas sin cambios pendientes de fusionar| `$ git branch -d [rama]`|
 |Borrar ramas con cambios pendientes de fusionar| `$ git branch -D [rama]`|
