@@ -126,6 +126,7 @@
 |Ver commits realizados en varias ramas no fusionados en la rama master | `$ git log <rama1> <rama1> ^master` |
 |Ver los cambios que vamos a subir al repositorio remoto si hacemos push| `$ git log origin/master..HEAD` |
 |Ver los cambios realizados entre dos ramas indicando a que rama corresponden los cambios| `$ git log [--left-right] <rama1>...<rama2>` |
+|Ver los cambios realizados entre dos ramas que modifican  archivos en conflicto tras un merge| `$ git log [--left-right] --merge` |
 
 ---
 
