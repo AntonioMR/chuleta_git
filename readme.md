@@ -225,3 +225,10 @@
 |--------|--------|
 |Fusionar rama en la rama activa| `$ git merge [rama]`|
 |Fusionar rama en la rama activa sin dejar commit de la fusión| `$ git merge [rama] --no-commit`|
+
+---
+
+## Reorganizando ramas (rebase)
+| casos de uso | comando |
+|--------|--------|
+|Reorganizar rama activa sobre otra| `$ git rebase [rama]`|
