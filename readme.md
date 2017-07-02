@@ -90,6 +90,10 @@
 | casos de uso | comando |
 |--------|--------|
 |Sacar cambios del area de confirmacion | `git reset HEAD [archivo]` |
+|Deshacer un commits apuntando HEAD a un commit concreto | `git reset HEAD <commit_checksum>` |
+|Deshacer el ultimo commits apuntando HEAD al commit anterior (deshace commit)| `git reset --soft HEAD~` |
+|Deshacer el ultimo commits apuntando HEAD al commit anterior (deshace commit y add) | `git reset [--mixed] HEAD~` |
+|Deshacer el ultimo commits apuntando HEAD al commit anterior (deshace commit, add y directorio de trabajo. Los cambios se perderan) | `git reset --hard HEAD~` |
 |Descartar cambios no confirmados realizados en un archivo (se perderan) | `git checkout -- [archivo]` |
 
 ---
