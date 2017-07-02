@@ -233,6 +233,8 @@
 |--------|--------|
 |Fusionar rama en la rama activa| `$ git merge <rama>`|
 |Fusionar rama en la rama activa sin dejar commit de la fusión| `$ git merge <rama> --no-commit`|
+|Fusionar evitando conflictos por espacios en blanco| `$ git merge -Xignore-all-space <rama>`|
+|Abortar una fusion que reporta conflictos| `$ git merge --abort`|
 
 ---
 
