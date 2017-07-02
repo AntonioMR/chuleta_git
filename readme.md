@@ -28,8 +28,8 @@
 ## Clonar repositorios (clone)
 | casos de uso | comando |
 |--------|--------|
-|Clonar repositorio desde url| `$ git clone [url]`|
-|Clonar repositorio desde url en directorio| `$ git clone [url] <dir>` |
+|Clonar repositorio desde url| `$ git clone <url>`|
+|Clonar repositorio desde url en directorio| `$ git clone <url> [dir]` |
 
 ---
 
@@ -45,14 +45,14 @@
 
 | casos de uso | comando |
 |--------|--------|
-|Añadir fichero | `$ git add [fichero]` |
-|Añadir directorio | `$ git add [directorio/]`|
+|Añadir fichero | `$ git add <fichero>` |
+|Añadir directorio | `$ git add <directorio/>`|
 |Añadir todos los ficheros nuevos o modificados | `$ git add .` `$ git add -a` |
 |Añadir los ficheros nuevos, modificados o eliminados | `$ git add -A` |
 |Añadir los ficheros que ya estan en seguimiento | `$ git add -u` |
 |Muestra lo que se añadiría | `$ git add -n` |
 |Añadir interactivo | `$ git add -i`|
-|Añadir parte del archivo | `$ git add -p [archivo]`|
+|Añadir parte del archivo | `$ git add -p <archivo>`|
 
 ---
 
@@ -60,9 +60,9 @@
 
 | casos de uso | comando |
 |--------|--------|
-|Eliminar un fichero del disco eliminandolo del seguimiento | `$ git rm [fichero]` |
-|Eliminar un fichero del disco eliminandolo del seguimiento si está en el area de confirmación | `$ git rm -f [archivo]`|
-|Eliminar del seguimiento sin eliminar del disco | `$ git rm --cached [archivo]`|
+|Eliminar un fichero del disco eliminandolo del seguimiento | `$ git rm <fichero>` |
+|Eliminar un fichero del disco eliminandolo del seguimiento si está en el area de confirmación | `$ git rm -f <archivo>`|
+|Eliminar del seguimiento sin eliminar del disco | `$ git rm --cached <archivo>`|
 
 ---
 
@@ -70,7 +70,7 @@
 
 | casos de uso | comando |
 |--------|--------|
-|Cambiar el nombre de un fichero en seguimiento | `$ git mv [nombre] [nuevoNombre]` |
+|Cambiar el nombre de un fichero en seguimiento | `$ git mv <nombre> <nuevoNombre>` |
 
 ---
 
@@ -89,8 +89,8 @@
 
 | casos de uso | comando |
 |--------|--------|
-|Sacar cambios del area de confirmacion | `git reset HEAD <archivo>` |
-|Descartar cambios no confirmados realizados en un archivo (se perderan) | `git checkout -- <archivo>` |
+|Sacar cambios del area de confirmacion | `git reset HEAD [archivo]` |
+|Descartar cambios no confirmados realizados en un archivo (se perderan) | `git checkout -- [archivo]` |
 
 ---
 
@@ -126,7 +126,7 @@
 | casos de uso | comando |
 |--------|--------|
 |Ver todas las diferencias | `$ git diff` |
-|Ver diferencias en fichero | `$ git diff [fichero]` |
+|Ver diferencias en fichero | `$ git diff <fichero>` |
 |Ver diferencias en el area de confirmación | `$ git diff --cached` |
 
 ---
@@ -134,14 +134,14 @@
 ## aparcando cambio (stash)
 | casos de uso | comando |
 |--------|--------|
-|Aparcando todos los cambios| `$ git stash <save>`|
+|Aparcando todos los cambios| `$ git stash [save]`|
 | Listando todos los cambios aparcados | `$ git stash list`|
 |Aplicando los ultimos cambios aparcados| `$ git stash apply`|
 |Borrando los cambios aparcados| `$ git stash drop stash@{0}`|
 |Aplicar ultimos cambios aparcados y borrarlos de la lista| `$ git stash pop`|
 |Aparcar solo los cambio no añadidos al area de confirmación| `$ git stash --keep-index`|
 |Decidir que cambios del fichero añadir al aparcamiento| `$ git stash --patch`|
-|Mover los cambios a una nueva rama| `$ git stash branch [rama]`|
+|Mover los cambios a una nueva rama| `$ git stash branch <rama>`|
 
 ---
 
@@ -162,10 +162,10 @@
 |--------|--------|
 |Ver los repositorios remotos configurados (solo nombre)| `$ git remote`|
 |Ver los repositorios remotos configurados (nombre y url)| `$ git remote -v`|
-|Añadir repositorio remoto| `$ git remote add [nombre-remoto] [url-remoto]`|
-|Inspeccionar repositorio remoto| `$ git remote show [nombre-remoto]`|
+|Añadir repositorio remoto| `$ git remote add <nombre-remoto> <url-remoto>`|
+|Inspeccionar repositorio remoto| `$ git remote show <nombre-remoto>`|
 |Renombrar repositorio remoto| `$ git remote rename [nombre-remoto] [nuevo_nombre-remoto]`|
-|Eliminar repositorio remoto| `$ git remote rm [nombre-remoto]`|
+|Eliminar repositorio remoto| `$ git remote rm <nombre-remoto>`|
 
 ---
 
@@ -173,7 +173,7 @@
 | casos de uso | comando |
 |--------|--------|
 |Traer informacion de cambios del remoto "origin"| `$ git fetch`|
-|Traer informacion de cambios del un repositorio remoto concreto| `$ git fetch [nombre-remoto]`|
+|Traer informacion de cambios del un repositorio remoto concreto| `$ git fetch <nombre-remoto>`|
 
 ---
 
@@ -181,9 +181,9 @@
 | casos de uso | comando |
 |--------|--------|
 |Llevar cambios registrados al remoto "origin"| `$ git push`|
-|Llevar cambios registrados a remoto concreto | `$ git push [nombre-remoto]`|
-|Llevar cambios de una rama al remoto "origin" | `$ git push origin [rama]`|
-|Llevar una etiqueta al remoto "origin" | `$ git push origin [tag]`|
+|Llevar cambios registrados a remoto concreto | `$ git push <nombre-remoto>`|
+|Llevar cambios de una rama al remoto "origin" | `$ git push origin <rama>`|
+|Llevar una etiqueta al remoto "origin" | `$ git push origin <tag>`|
 |Llevar todas las etiquetas al remoto "origin" | `$ git push origin --tags`|
 
 ---
@@ -193,9 +193,9 @@
 |--------|--------|
 |Listar etiquetas disponibles| `$ git tag`|
 |Listar etiquetas que cumplen con un criterio| `$ git tag -l 'V1.*'`|
-|Crear etiqueta anotada| `$ git tag -a [tag_name] <-m 'comentario de etiqueta'>`|
-|Crear etiqueta anotada en un commit anterior| `$ git tag -a [tag_name] [commit_checksum]`|
-|Crear etiqueta ligera| `$ git tag [tag_name]`|
+|Crear etiqueta anotada| `$ git tag -a <tag_name> [-m 'comentario de etiqueta']`|
+|Crear etiqueta anotada en un commit anterior| `$ git tag -a <tag_name> <commit_checksum>`|
+|Crear etiqueta ligera| `$ git tag <tag_name>`|
 
 ---
 
@@ -206,29 +206,29 @@
 |Listar ramas viendo ultimos cambios confirmados en cada rama| `$ git branch -v`|
 |Listar ramas fusionadas en la rama activa| `$ git branch --merged`|
 |Listar ramas con trabajos sin fusionar en la rama activa| `$ git branch --no-merged`|
-|Crear ramas | `$ git branch [rama]`|
-|Borrar ramas sin cambios pendientes de fusionar| `$ git branch -d [rama]`|
-|Borrar ramas con cambios pendientes de fusionar| `$ git branch -D [rama]`|
+|Crear ramas | `$ git branch <rama>`|
+|Borrar ramas sin cambios pendientes de fusionar| `$ git branch -d <rama>`|
+|Borrar ramas con cambios pendientes de fusionar| `$ git branch -D <rama>`|
 
 ---
 
 ## Moviendose entre ramas (checkout)
 | casos de uso | comando |
 |--------|--------|
-|Cambiar de rama activa| `$ git checkout [rama]`|
-|Cambiar de rama activa creando la nueva rama| `$ git checkout -b [rama]`|
+|Cambiar de rama activa| `$ git checkout <rama>`|
+|Cambiar de rama activa creando la nueva rama| `$ git checkout -b <rama>`|
 
 ---
 
 ## Fusionando ramas entre ramas (merge)
 | casos de uso | comando |
 |--------|--------|
-|Fusionar rama en la rama activa| `$ git merge [rama]`|
-|Fusionar rama en la rama activa sin dejar commit de la fusión| `$ git merge [rama] --no-commit`|
+|Fusionar rama en la rama activa| `$ git merge <rama>`|
+|Fusionar rama en la rama activa sin dejar commit de la fusión| `$ git merge <rama> --no-commit`|
 
 ---
 
 ## Reorganizando ramas (rebase)
 | casos de uso | comando |
 |--------|--------|
-|Reorganizar rama activa sobre otra| `$ git rebase [rama]`|
+|Reorganizar rama activa sobre otra| `$ git rebase <rama>`|
