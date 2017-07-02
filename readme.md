@@ -118,6 +118,10 @@
 |Mostrar los ultimos commits aplicando formato expecífico | `$ git log --pretty=format:"%s"` |
 |Mostrar los ultimos commits mostrando un grafico de ramificacion | `$ git log --graph` |
 |Mostrar los ultimos commits mostrando donde apuntan las ramas creadas | `$ git log --decorate` |
+|Ver commits realizados en la rama "rama" no fusionados en la rama master | `$ git log master..<rama>` `$ git log ^master <rama>` |
+|Ver commits realizados en varias ramas no fusionados en la rama master | `$ git log <rama1> <rama1> ^master` |
+|Ver los cambios que vamos a subir al repositorio remoto si hacemos push| `$ git log origin/master..HEAD` |
+|Ver los cambios realizados entre dos ramas indicando a que rama corresponden los cambios| `$ git log [--left-right] <rama1>...<rama2>` |
 
 ---
 
