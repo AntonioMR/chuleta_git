@@ -20,8 +20,9 @@
 ---
 
 ## Iniciar repositorio (init)
-
-`$ git init`
+| casos de uso | comando |
+|--------|--------|
+|Iniciar un nuevo repositorio| `$ git init [nombre-proyecto]`|
 
 ---
 
