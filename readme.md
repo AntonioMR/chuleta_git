@@ -108,6 +108,7 @@
 |ignorar directorios | `directorio/` |
 |ignorar ficheros en un directorio | `ruta/*.txt` |
 |ignorar ficheros en un directorio recursivamente| `ruta/**/*.txt` |
+|Ver ficheros ignorados en el repositorio| `git ls-files --others --ignored --exclude-standard` |
 
 ---
 
