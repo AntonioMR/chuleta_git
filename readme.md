@@ -220,6 +220,7 @@
 |Crear ramas | `$ git branch <rama>`|
 |Borrar ramas sin cambios pendientes de fusionar| `$ git branch -d <rama>`|
 |Borrar ramas con cambios pendientes de fusionar| `$ git branch -D <rama>`|
+|Borrar ramas en repositorio remoto| `$ git branch -dr <remote/rama>`|
 
 ---
 
