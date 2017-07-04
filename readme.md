@@ -239,6 +239,7 @@
 |Fusionar rama en la rama activa sin dejar commit de la fusión| `$ git merge <rama> --no-commit`|
 |Fusionar evitando conflictos por espacios en blanco| `$ git merge -Xignore-all-space <rama>`|
 |Abortar una fusion que reporta conflictos| `$ git merge --abort`|
+|Continuar una fusion que ha reportado conflictos tras corregir| `$ git merge --continue`|
 |Fusionar rama y en caso de conflicto resolver con los cambios en la rama actual| `$  git merge -Xours <rama>`|
 |Fusionar rama y en caso de conflicto resolver con los cambios en la rama a fusionar| `$  git merge -Xtheirs <rama>`|
 
