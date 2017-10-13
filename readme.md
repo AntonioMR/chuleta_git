@@ -207,6 +207,8 @@
 |Crear etiqueta anotada| `$ git tag -a <tag_name> [-m 'comentario de etiqueta']`|
 |Crear etiqueta anotada en un commit anterior| `$ git tag -a <tag_name> <commit_checksum>`|
 |Crear etiqueta ligera| `$ git tag <tag_name>`|
+|Borrar una etiqueta | `$ git tag -d <tag_name>`|
+|Borrar una etiqueta en repositorio remoto | `$ git push --delete origin <tag_name>`|
 
 ---
 
