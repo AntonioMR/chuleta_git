@@ -12,10 +12,12 @@
 
 | casos de uso | comando |
 |--------|--------|
-|configurar identidad nombre | `git config --global user.name "Nombre"` |
-|configurar identidad email | `git config --global user.email nombre@example.com` |
-|configurar editor | `git config --global core.editor vi` |
-|comprobar configuracion | `git config --list` |
+|Configurar identidad nombre | `git config --global user.name "Nombre"` |
+|Configurar identidad email | `git config --global user.email nombre@example.com` |
+|Configurar editor | `git config --global core.editor vi` |
+|Configurar un alias para una orden | `git config [--global] alias.<alias_deseado> 'orden git con parametros de opcion'`|
+|Comprobar configuracion | `git config --list` |
+
 
 ---
 
