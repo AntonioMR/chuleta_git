@@ -149,7 +149,7 @@
 | casos de uso | comando |
 |--------|--------|
 |Aparcando todos los cambios| `git stash [save]`|
-| Listando todos los cambios aparcados | `git stash list`|
+|Listando todos los cambios aparcados | `git stash list`|
 |Aplicando los ultimos cambios aparcados| `git stash apply`|
 |Borrando los cambios aparcados| `git stash drop stash@{0}`|
 |Aplicar ultimos cambios aparcados y borrarlos de la lista| `git stash pop`|
@@ -254,3 +254,20 @@
 | casos de uso | comando |
 |--------|--------|
 |Reorganizar rama activa sobre otra| `git rebase <rama>`|
+
+
+---
+
+## Mis alias
+| casos de uso | alias | ejemplo de uso |
+|--------|--------|---------|
+|Log en formato abreviado, mostrando las ramas de forma grafica | alias.l=log --oneline --decorate --graph --branches| `git l` |
+|Log en formato abreviado, mostrando por quien y cuando se realizo | alias.ll=log --pretty=format:'%h: %an, %cr, %s'| `git ll -S<patron_de_cambios_buscado>` |
+|Listar cambios del ultimo commit | alias.last=log -p -1 HEAD| `git last` |
+|Ver status de forma abreviada | alias.st=status -s| `git st` |
+|Realizar un commit | alias.c=commit -m| `git c "comentario del commit"` |
+|Añadir todos los ficheros con cambios al stage | alias.a=add .| `git a` |
+|Alias para la orden branch | alias.b=branch | `git b` |
+|Alias para la orden checkout | alias.ch=checkout | `git ch <rama>` o `git ch -b <nueva_rama>` |
+|Alias para la orden difftool | alias.d=difftool | `git d <fichero>` |
+
