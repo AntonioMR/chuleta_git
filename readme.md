@@ -279,7 +279,7 @@
 | casos de uso | comando |
 |--------|--------|
 |Ver el hash de cualquier commit/stash que se haya registrado en el repositorio utilizando reflog| `git reflog`|
-|Ver el hash de cualquier commit/stash que se haya registrado en el repositorio utilizando git log (requiere el alias definido arriba)| `git l --all $( git fsck --no-reflog | awk '/dangling commit/ {print $3}' )`|
-|Ver el hash de cualquier commit/stash que se haya registrado en el repositorio utilizando gitk| `gitk --all $( git fsck --no-reflog | awk '/dangling commit/ {print $3}' )`|
+|Ver el hash de cualquier commit/stash que se haya registrado en el repositorio utilizando git log (requiere el alias definido arriba)| `git l --all $( git fsck --no-reflog ``|`` awk '/dangling commit/ {print $3}' )`|
+|Ver el hash de cualquier commit/stash que se haya registrado en el repositorio utilizando gitk| `gitk --all $( git fsck --no-reflog ``|`` awk '/dangling commit/ {print $3}' )`|
 |Recuperar el commit de un stash borrado| `git stash apply <stash_hash>`|
 |Recuperar un commit borrado (ojo al --hard. Aparcar cambios que no se quieran perder!)| `git reset --hard <commit_hash>`|
